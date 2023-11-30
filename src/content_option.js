@@ -144,8 +144,9 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: 'name@domain.com',
-  YOUR_FONE: '(555)123-4567',
+  TITLE: 'Get in Touch',
+  YOUR_EMAIL: 'manisha.vatsa1313@gmail.com',
+  YOUR_PHONE: '(412)482-0253',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ',
   // creat an emailjs.com account

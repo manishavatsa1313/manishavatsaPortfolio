@@ -1,3 +1,8 @@
+.home{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 section {
   flex: 1 0 auto;
   position: relative;
@@ -120,66 +125,10 @@ section {
     -8px -8px 0px var(--text-color);
 }
 
-.ac_btn:hover .one {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.ac_btn:hover .two {
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.ac_btn:hover .three {
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.ac_btn:hover .four {
-  transform: translate3d(0px, 0px, 0px);
-}
-
 .Typewriter{
+  position: relative;
   padding-bottom: 10px;
-}
-
-.ac_btn .ring {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: transparent;
-  top: 0;
-  left: 0;
-  transform: translate3d(0px, 90px, 0px);
-}
-
-.ac_btn .one {
-  background-color: #000;
-  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -3;
-  z-index: -4;
-}
-
-.ac_btn .two {
-  background-color: var(--primary-color);
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -3;
-}
-
-.ac_btn .three {
-  background-color: var(--secondary-color);
-  z-index: -2;
-  transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -3;
-}
-
-#button_p {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  border: var(--primary-color) 2px solid;
-}
-
-#button_h:hover {
-  color: var(--primary-color);
-  border: var(--primary-color) 2px solid;
+  z-index: -1;
 }
 
 .intro_sec .h_bg-image .block {
@@ -193,7 +142,6 @@ section {
   border-radius: 100%;
   /* mix-blend-mode: multiply; */
   background-color: #2f514e;
-  z-index: 9999999999;
   display: flex;
   align-items: center;
   flex-direction: column;

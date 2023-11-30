@@ -13,11 +13,15 @@ const Headermain = () => {
     document.body.classList.toggle('ovhidden');
   };
 
+  const handleCloseMenu = () => {
+    setActive('false');
+  };
+
   return (
     <>
       <header className="site_header">
         <div className="home">
-          <Link className="navbar-brand nav_ac" to="/">
+          <Link className="navbar-brand nav_ac" to="/" onClick={handleCloseMenu}>
             {logotext}
           </Link>
           <div className="menu_theme">
@@ -29,7 +33,7 @@ const Headermain = () => {
         </div>
 
         <div className={`site__navigation ${!isActive ? 'menu__opend' : ''}`}>
-          <div className="bg__menu h-100">
+          <div className="bg__menu">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
@@ -39,7 +43,7 @@ const Headermain = () => {
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/project" className="my-3">
+                    <Link onClick={handleToggle} to="/projects" className="my-3">
                       {' '}
                       Projects
                     </Link>
@@ -59,8 +63,8 @@ const Headermain = () => {
               </div>
             </div>
           </div>
-          <div className="">
-            <div className="d-flex">
+          <div className="menu_footer ">
+             <div className="d-flex">
               <a href={socialprofils.instagram}>Instagram</a>
               <a href={socialprofils.facebook}>Facebook</a>
               <a href={socialprofils.github}>Github</a>

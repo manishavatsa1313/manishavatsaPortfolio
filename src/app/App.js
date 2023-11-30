@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import React, { useEffect, createContext, useState, useContext, useMemo } from 'react';
+import { BrowserRouter as Router, useLocation, useHistory } from 'react-router-dom';
 import withRouter from '../hooks/withRouter';
 import AppRoutes from './routes';
 import Headermain from '../header';
 import AnimatedCursor from '../hooks/AnimatedCursor';
 import './App.scss';
+import { ThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
+import {createDesign} from './theme'
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -15,7 +18,35 @@ function _ScrollToTop(props) {
 }
 const ScrollToTop = withRouter(_ScrollToTop);
 
-export default function App() {
+export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+
+export function App() {
+  const [mode, setMode] = useState(localStorage.getItem("theme"));
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      },
+    }),
+    [],
+  );
+
+  const theme = useMemo(
+    () =>
+      createTheme(createDesign(mode)),
+    [mode],
+  );
+
+  return (
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <Main />
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+  );
+}
+
+export function Main() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
