@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
-import { useMediaQuery } from '@mui/material';
 import { StyledTypography } from '../../app/theme';
 
 import './style.scss';
