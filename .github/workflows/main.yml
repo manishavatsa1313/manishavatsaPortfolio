@@ -44,3 +44,4 @@ jobs:
           environment_name: Manishavatsa-portfolio-env
           region: us-east-2
           deployment_package: deploy.zip
+          versionLabels: ${{ github.run_number }}
