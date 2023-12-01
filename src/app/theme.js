@@ -10,48 +10,48 @@ export const createDesign = (mode) => ({
   palette: {
     mode,
     ...(mode === 'light'
-    ? {
-        // palette values for light mode
-        primary: {
-          main: '#eee7e1', // Specify the main color for the primary palette
-        },
-        secondary: {
-          main: '#000'
-        },
-        text: {
-          primary: '#000',
-          secondary: '#eee7e1',
-        },
-        background: {
-          default: '#eee7e1',
-          paper: '#eee7e1',
+      ? {
+          // palette values for light mode
+          primary: {
+            main: '#eee7e1', // Specify the main color for the primary palette
+          },
+          secondary: {
+            main: '#000',
+          },
+          text: {
+            primary: '#000',
+            secondary: '#eee7e1',
+          },
+          background: {
+            default: '#eee7e1',
+            paper: '#eee7e1',
+          },
         }
-      }
-    : {
-        // palette values for dark mode
-        primary: {
-          main: '#0d0d0d', // Specify the main color for the primary palette
-        },
-        secondary: {
-          main: '#eee7e1'
-        },
-        background: {
-          default: '#0c0c0c',
-          paper: '#eee7e1',
-        },
-        text: {
-          primary: '#eee7e1',
-          secondary: '#000',
-        }
-      }),
+      : {
+          // palette values for dark mode
+          primary: {
+            main: '#0d0d0d', // Specify the main color for the primary palette
+          },
+          secondary: {
+            main: '#eee7e1',
+          },
+          background: {
+            default: '#0c0c0c',
+            paper: '#eee7e1',
+          },
+          text: {
+            primary: '#eee7e1',
+            secondary: '#000',
+          },
+        }),
   },
 });
 
 export const StyledTypography = styled(Typography)({
   fontFamily: 'Libre Bodoni, serif',
-})
+});
 
-export const StyledButton = styled(Button)(({theme}) => ({
+export const StyledButton = styled(Button)(({ theme }) => ({
   boxShadow: 'none',
   textTransform: 'none',
   padding: '15px 40px',
@@ -88,7 +88,7 @@ export const StyledButton = styled(Button)(({theme}) => ({
   },
 }));
 
-export const StyledTextField = styled(TextField)(({theme}) => ({
+export const StyledTextField = styled(TextField)(({ theme }) => ({
   '& label': {
     color: theme.palette.text.primary,
   },
@@ -110,4 +110,3 @@ export const StyledTextField = styled(TextField)(({theme}) => ({
     },
   },
 }));
-

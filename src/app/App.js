@@ -7,7 +7,7 @@ import AnimatedCursor from '../hooks/AnimatedCursor';
 import './App.scss';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
-import {createDesign} from './theme'
+import { createDesign } from './theme';
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -21,7 +21,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 export function App() {
-  const [mode, setMode] = useState(localStorage.getItem("theme"));
+  const [mode, setMode] = useState(localStorage.getItem('theme'));
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -31,11 +31,7 @@ export function App() {
     [],
   );
 
-  const theme = useMemo(
-    () =>
-      createTheme(createDesign(mode)),
-    [mode],
-  );
+  const theme = useMemo(() => createTheme(createDesign(mode)), [mode]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

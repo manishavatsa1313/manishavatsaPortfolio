@@ -64,7 +64,7 @@ const Headermain = () => {
             </div>
           </div>
           <div className="menu_footer ">
-             <div className="d-flex">
+            <div className="d-flex">
               <a href={socialprofils.instagram}>Instagram</a>
               <a href={socialprofils.facebook}>Facebook</a>
               <a href={socialprofils.github}>Github</a>
