@@ -99,9 +99,6 @@ export const StyledTextField = styled(TextField)(({ theme }) => ({
     '& fieldset': {
       borderColor: theme.palette.text.primary,
     },
-    '&:hover fieldset': {
-      borderColor: theme.palette.text.primary,
-    },
     '&.Mui-focused fieldset': {
       borderColor: '#6F7E8C',
     },
