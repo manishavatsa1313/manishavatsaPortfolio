@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
       
       - name: Cache node_modules
         uses: actions/cache@v2
@@ -40,8 +40,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: manisha-vatsa-portfolio
-          environment_name: Manisha-vatsa-portfolio-env
+          application_name: portfolio-manisha-vatsa
+          environment_name: Portfolio-manisha-vatsa-env
           version_label: ${{ github.run_number }}
           region: us-east-2
           deployment_package: deploy.zip
