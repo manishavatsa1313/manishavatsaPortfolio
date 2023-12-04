@@ -68,21 +68,21 @@ export const StyledButton = styled(Button)(({ theme }) => ({
     fontSize: '16px',
     padding: '7.5px 40px',
   },
-  '&:hover': {
-    backgroundColor: theme.palette.secondary.main,
-    borderColor: theme.palette.secondary.main,
-    boxShadow: 'none',
-    padding: '15px 60px',
-    transition: 'padding 0.25 ease-out',
-  },
-  '&:active': {
-    boxShadow: 'none',
-    backgroundColor: '#1a1818',
-    borderColor: '#1a1818',
-  },
-  '&:focus': {
-    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-  },
+  // '&:hover': {
+  //   backgroundColor: theme.palette.secondary.main,
+  //   borderColor: theme.palette.secondary.main,
+  //   boxShadow: 'none',
+  //   padding: '15px 60px',
+  //   transition: 'padding 0.25 ease-out',
+  // },
+  // '&:active': {
+  //   boxShadow: 'none',
+  //   backgroundColor: '#1a1818',
+  //   borderColor: '#1a1818',
+  // },
+  // '&:focus': {
+  //   boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+  // },
 }));
 
 export const StyledTextField = styled(TextField)(({ theme }) => ({

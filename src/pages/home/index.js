@@ -8,8 +8,6 @@ import { useMediaQuery } from '@mui/material';
 import { StyledButton, StyledTypography } from '../../app/theme';
 import { Grow } from '@mui/material';
 
-import './style.scss';
-
 const styles = {
   image: {
     transition: 'transform 0.2s ease-in-out',
