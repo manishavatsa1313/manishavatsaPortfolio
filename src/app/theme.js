@@ -49,40 +49,40 @@ export const StyledTypography = styled(Typography)({
 });
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  boxShadow: 'none',
-  textTransform: 'none',
-  padding: '15px 40px',
-  border: '1px solid',
-  borderRadius: '50px',
-  lineHeight: 1.5,
-  backgroundColor: theme.palette.secondary.main,
-  borderColor: theme.palette.secondary.main,
-  fontFamily: 'Libre Bodoni, serif',
-  fontSize: '18px',
-  fontWeight: '400',
-  color: theme.palette.text.secondary,
-  letterSpacing: '1px',
-  transition: 'padding .25s ease-in-out',
-  marginBottom: '20px',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '16px',
-    padding: '7.5px 40px',
-  },
-  // '&:hover': {
-  //   backgroundColor: theme.palette.secondary.main,
-  //   borderColor: theme.palette.secondary.main,
-  //   boxShadow: 'none',
-  //   padding: '15px 60px',
-  //   transition: 'padding 0.25 ease-out',
-  // },
-  // '&:active': {
-  //   boxShadow: 'none',
-  //   backgroundColor: '#1a1818',
-  //   borderColor: '#1a1818',
-  // },
-  // '&:focus': {
-  //   boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-  // },
+//   boxShadow: 'none',
+//   textTransform: 'none',
+//   padding: '15px 40px',
+//   border: '1px solid',
+//   borderRadius: '50px',
+//   lineHeight: 1.5,
+//   backgroundColor: theme.palette.secondary.main,
+//   borderColor: theme.palette.secondary.main,
+//   fontFamily: 'Libre Bodoni, serif',
+//   fontSize: '18px',
+//   fontWeight: '400',
+//   color: theme.palette.text.secondary,
+//   letterSpacing: '1px',
+//   transition: 'padding .25s ease-in-out',
+//   marginBottom: '20px',
+//   [theme.breakpoints.down('md')]: {
+//     fontSize: '16px',
+//     padding: '7.5px 40px',
+//   },
+//   // '&:hover': {
+//   //   backgroundColor: theme.palette.secondary.main,
+//   //   borderColor: theme.palette.secondary.main,
+//   //   boxShadow: 'none',
+//   //   padding: '15px 60px',
+//   //   transition: 'padding 0.25 ease-out',
+//   // },
+//   // '&:active': {
+//   //   boxShadow: 'none',
+//   //   backgroundColor: '#1a1818',
+//   //   borderColor: '#1a1818',
+//   // },
+//   // '&:focus': {
+//   //   boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+//   // },
 }));
 
 export const StyledTextField = styled(TextField)(({ theme }) => ({
