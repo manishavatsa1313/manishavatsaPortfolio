@@ -5,7 +5,8 @@ import { introdata } from '../../content_option';
 import image from './media/manisha-main.jpg';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from '@mui/material';
-import { StyledButton, StyledTypography } from '../../app/theme';
+import { StyledTypography } from '../../app/theme';
+import Button from '@mui/material/Button';
 import { Grow } from '@mui/material';
 
 const styles = {
@@ -48,12 +49,12 @@ export const Home = () => {
               <Grid container spacing={2}>
                 <Grid item md={12} lg={6}>
                   <Link to="/projects" className="text_2">
-                    <StyledButton onClick={() => {}}>Projects</StyledButton>
+                    <Button onClick={() => {}}>Projects</Button>
                   </Link>
                 </Grid>
                 <Grid item md={12} lg={6}>
                   <Link to="/contact">
-                    <StyledButton onClick={() => {}}>Contact Me</StyledButton>
+                    <Button onClick={() => {}}>Contact Me</Button>
                   </Link>
                 </Grid>
               </Grid>

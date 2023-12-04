@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import { StyledButton, StyledTextField, StyledTypography } from '../../app/theme';
+import { StyledTextField, StyledTypography } from '../../app/theme';
+import Button from '@mui/material/Button';
 import { contactConfig } from '../../content_option';
 import { useMediaQuery } from '@mui/material';
 
@@ -70,7 +71,7 @@ const ContactForm = () => {
           <StyledTextField fullWidth required id="message" label="Message" multiline rows={8} />
         </Grid>
         <Grid item xs={12}>
-          <StyledButton type="submit">Submit</StyledButton>
+          <Button type="submit">Submit</Button>
         </Grid>
       </Grid>
     </form>

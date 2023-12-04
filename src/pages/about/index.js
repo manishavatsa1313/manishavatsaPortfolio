@@ -1,7 +1,8 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import image from './media/manisha.jpg';
-import { StyledButton, StyledTypography } from '../../app/theme';
+import { StyledTypography } from '../../app/theme';
 
 import './style.scss';
 
@@ -40,7 +41,7 @@ export const About = () => {
           consectetur adipiscing elit. Sed at nisl euismod urna bibendum.Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Sed at nisl euismod urna bibendum
         </p>
-        <StyledButton onClick={() => {}}>Resume</StyledButton>
+        <Button onClick={() => {}}>Resume</Button>
         <StyledTypography variant="h3" gutterBottom>
           Education
         </StyledTypography>

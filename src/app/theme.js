@@ -48,7 +48,7 @@ export const StyledTypography = styled(Typography)({
   fontFamily: 'Libre Bodoni, serif',
 });
 
-export const StyledButton = styled(Button)(({ theme }) => ({
+// export const StyledButton = styled(Button)(({ theme }) => ({
 //   boxShadow: 'none',
 //   textTransform: 'none',
 //   padding: '15px 40px',
@@ -83,7 +83,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
 //   // '&:focus': {
 //   //   boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
 //   // },
-}));
+// }));
 
 export const StyledTextField = styled(TextField)(({ theme }) => ({
   '& label': {
