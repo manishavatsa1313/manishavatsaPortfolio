@@ -32,16 +32,13 @@ jobs:
       - name: Build Application
         run: npm run build # run the "build" package script
 
-      - name: Generate deployment package
-        run: zip -r deploy.zip * .[^.]* -x "**node_modules**"
-
-      - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v21
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
         with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: portfolio-manisha-vatsa
-          environment_name: Portfolio-manisha-vatsa-env
-          version_label: ${{ github.run_number }}
-          region: us-east-2
-          deployment_package: deploy.zip
+          args: --acl public-read --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: us-east-2
+          SOURCE_DIR: "build"
