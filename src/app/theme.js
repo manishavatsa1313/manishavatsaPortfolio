@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-// import Button from '@mui/material/Button';
+import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { Typography } from '@mui/material';
 
@@ -23,6 +23,9 @@ export const createDesign = (mode) => ({
             default: '#eee7e1',
             paper: '#eee7e1',
           },
+          action: {
+            hoverOpacity: 0.1, // Specify the hover opacity for light mode
+          },
         }
       : {
           // palette values for dark mode
@@ -40,6 +43,9 @@ export const createDesign = (mode) => ({
             primary: '#eee7e1',
             secondary: '#000',
           },
+          action: {
+            hoverOpacity: 0.1, // Specify the hover opacity for light mode
+          },
         }),
   },
 });
@@ -48,42 +54,42 @@ export const StyledTypography = styled(Typography)({
   fontFamily: 'Libre Bodoni, serif',
 });
 
-// export const StyledButton = styled(Button)(({ theme }) => ({
-//   boxShadow: 'none',
-//   textTransform: 'none',
-//   padding: '15px 40px',
-//   border: '1px solid',
-//   borderRadius: '50px',
-//   lineHeight: 1.5,
-//   backgroundColor: theme.palette.secondary.main,
-//   borderColor: theme.palette.secondary.main,
-//   fontFamily: 'Libre Bodoni, serif',
-//   fontSize: '18px',
-//   fontWeight: '400',
-//   color: theme.palette.text.secondary,
-//   letterSpacing: '1px',
-//   transition: 'padding .25s ease-in-out',
-//   marginBottom: '20px',
-//   [theme.breakpoints.down('md')]: {
-//     fontSize: '16px',
-//     padding: '7.5px 40px',
-//   },
-//   // '&:hover': {
-//   //   backgroundColor: theme.palette.secondary.main,
-//   //   borderColor: theme.palette.secondary.main,
-//   //   boxShadow: 'none',
-//   //   padding: '15px 60px',
-//   //   transition: 'padding 0.25 ease-out',
-//   // },
-//   // '&:active': {
-//   //   boxShadow: 'none',
-//   //   backgroundColor: '#1a1818',
-//   //   borderColor: '#1a1818',
-//   // },
-//   // '&:focus': {
-//   //   boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-//   // },
-// }));
+export const StyledButton = styled(Button)(({ theme }) => ({
+  boxShadow: 'none',
+  textTransform: 'none',
+  padding: '15px 40px',
+  border: '1px solid',
+  borderRadius: '50px',
+  lineHeight: 1.5,
+  backgroundColor: theme.palette.secondary.main,
+  borderColor: theme.palette.secondary.main,
+  fontFamily: 'Libre Bodoni, serif',
+  fontSize: '18px',
+  fontWeight: '400',
+  color: theme.palette.text.secondary,
+  letterSpacing: '1px',
+  transition: 'padding .25s ease-in-out',
+  marginBottom: '20px',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '16px',
+    padding: '7.5px 40px',
+  },
+  '&:hover': {
+    backgroundColor: theme.palette.secondary.main,
+    borderColor: theme.palette.secondary.main,
+    boxShadow: 'none',
+    padding: '15px 60px',
+    transition: 'padding 0.25 ease-out',
+  },
+  '&:active': {
+    boxShadow: 'none',
+    backgroundColor: '#1a1818',
+    borderColor: '#1a1818',
+  },
+  '&:focus': {
+    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+  },
+}));
 
 export const StyledTextField = styled(TextField)(({ theme }) => ({
   '& label': {

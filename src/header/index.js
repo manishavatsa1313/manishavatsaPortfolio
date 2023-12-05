@@ -4,6 +4,7 @@ import { VscGrabber, VscClose } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 import { logotext, socialprofils } from '../content_option';
 import Themetoggle from '../components/themetoggle';
+import Button from '@mui/material/Button';
 
 const Headermain = () => {
   const [isActive, setActive] = useState('false');
@@ -26,9 +27,9 @@ const Headermain = () => {
           </Link>
           <div className="menu_theme">
             <Themetoggle />
-            <button className="menu__button  nav_ac" onClick={handleToggle}>
+            <Button className="menu__button  nav_ac" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
-            </button>
+            </Button>
           </div>
         </div>
 
