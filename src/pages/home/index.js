@@ -12,7 +12,7 @@ import { Grow } from '@mui/material';
 const styles = {
   image: {
     transition: 'transform 0.2s ease-in-out',
-    "&:hover": {
+    '&:hover': {
       transform: 'scale(1.5)',
     },
   },

@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      
+
       - name: Cache node_modules
         uses: actions/cache@v2
         with:
@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Application
         run: npm run build
-      
+
       - name: Generate deployment package
         run: zip -r deploy.zip * .[^.]* -x "**node_modules**"
 

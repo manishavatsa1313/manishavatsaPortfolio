@@ -52,7 +52,7 @@ export const About = () => {
           adipiscing elit. Sed at nisl euismod urna bibendum
         </p>
       </Grid>
-      <Grid item s={12} md={4} style={{ margin: { s: 'none', md: '50px' }}}>
+      <Grid item s={12} md={4} style={{ margin: { s: 'none', md: '50px' } }}>
         <img src={image} alt="professionalpics" style={{ width: '100%', height: 'auto' }} />
       </Grid>
     </Grid>
