@@ -12,7 +12,7 @@ const introdata = {
     third: 'I develop backend services',
   },
   description:
-    "I am a full stack applications developer currently working at Alumni ventures with Master's in Software Engineering from Carnegie Mellon University. I am curious and entusiastic person, an avid traveller and someday aspire to run a full marathon.",
+    "I am a full-stack applications developer currently working at Alumni ventures with a Master's in Software Engineering from Carnegie Mellon University. I am a curious and enthusiastic person, an avid traveler and someday aspire to run a full marathon.",
   your_img_url: 'https://images.unsplash.com/photo-1514790193030-c89d266d5a9d',
 };
 

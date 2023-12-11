@@ -35,8 +35,7 @@ const Headermain = () => {
 
         <div className={`site__navigation ${!isActive ? 'menu__opend' : ''}`}>
           <div className="bg__menu">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
+              <div className="menu__container">
                 <ul className="the_menu">
                   <li className="menu_item ">
                     <Link onClick={handleToggle} to="/" className="my-3">
@@ -61,7 +60,6 @@ const Headermain = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
             </div>
           </div>
           <div className="menu_footer ">
