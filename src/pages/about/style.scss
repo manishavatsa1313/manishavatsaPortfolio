@@ -18,3 +18,14 @@
 TextField {
   color: var(--primary-color);
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 15px; /* Adjust the margin-bottom value for more or less spacing */
+}
+p {
+  margin-bottom: 20px;
+}

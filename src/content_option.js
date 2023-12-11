@@ -9,35 +9,12 @@ const introdata = {
   animated: {
     first: 'I love coding',
     second: 'I code cool websites',
-    third: 'I develop mobile apps',
+    third: 'I develop backend services',
   },
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum',
+    "I am a full stack applications developer currently working at Alumni ventures with Master's in Software Engineering from Carnegie Mellon University. I am curious and entusiastic person, an avid traveller and someday aspire to run a full marathon.",
   your_img_url: 'https://images.unsplash.com/photo-1514790193030-c89d266d5a9d',
 };
-
-const dataabout = {
-  title: 'abit about my self',
-  aboutme:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.',
-};
-const worktimeline = [
-  {
-    jobtitle: 'Designer of week',
-    where: 'YAdfi',
-    date: '2020',
-  },
-  {
-    jobtitle: 'Designer of week',
-    where: 'Jamalya',
-    date: '2019',
-  },
-  {
-    jobtitle: 'Designer of week',
-    where: 'ALquds',
-    date: '2019',
-  },
-];
 
 const skills = [
   {
@@ -148,8 +125,7 @@ const contactConfig = {
   TITLE: 'Get in Touch',
   YOUR_EMAIL: 'manisha.vatsa1313@gmail.com',
   YOUR_PHONE: '(412)482-0253',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ',
+  description: '',
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: 'service_id',
@@ -158,21 +134,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: 'https://github.com',
-  facebook: 'https://facebook.com',
-  linkedin: 'https://linkedin.com',
-  twitter: 'https://twitter.com',
-  instagram: 'https://www.instagram.com/',
+  github: 'https://github.com/manishavatsa1313',
+  linkedin: 'https://www.linkedin.com/in/manisha-vatsa/',
+  instagram: 'https://www.instagram.com/manishavatsa',
 };
-export {
-  meta,
-  dataabout,
-  dataportfolio,
-  worktimeline,
-  skills,
-  services,
-  introdata,
-  contactConfig,
-  socialprofils,
-  logotext,
-};
+export { meta, dataportfolio, skills, services, introdata, contactConfig, socialprofils, logotext };

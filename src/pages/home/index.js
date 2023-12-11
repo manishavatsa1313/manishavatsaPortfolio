@@ -52,8 +52,8 @@ export const Home = () => {
                   </Link>
                 </Grid>
                 <Grid item md={12} lg={6}>
-                  <Link to="/contact">
-                    <StyledButton onClick={() => {}}>Contact Me</StyledButton>
+                  <Link to="/About">
+                    <StyledButton onClick={() => {}}>About Me</StyledButton>
                   </Link>
                 </Grid>
               </Grid>
