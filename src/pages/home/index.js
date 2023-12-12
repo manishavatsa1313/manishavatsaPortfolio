@@ -44,7 +44,7 @@ export const Home = () => {
               }}
             />
             <p>{introdata.description}</p>
-            <div className="intro_btn-action pb-5">
+            <div>
               <Grid container spacing={2}>
                 <Grid item md={12} lg={6}>
                   <Link to="/projects" className="text_2">

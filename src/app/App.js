@@ -18,17 +18,18 @@ function _ScrollToTop(props) {
 }
 const ScrollToTop = withRouter(_ScrollToTop);
 
-export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = createContext({ toggleColorMode: () => {}, mode: '' });
 
 export function App() {
-  const [mode, setMode] = useState(localStorage.getItem('theme'));
+  const [mode, setMode] = useState(localStorage.getItem('theme')?? 'dark');
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
       },
+      mode,
     }),
-    [],
+    [mode],
   );
 
   const theme = useMemo(() => createTheme(createDesign(mode)), [mode]);
